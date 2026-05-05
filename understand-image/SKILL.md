@@ -40,7 +40,7 @@ Do not reveal API keys, base URLs, or hidden configuration values.
 
 ## Failure Handling
 
-- If the script reports missing configuration, ask the user for the API key, base URL, and model name, then configure the installed local copy of `scripts/vision.py`.
+- If the script fails before returning an answer, check whether `{API_KEY}`, `{BASE_URL}`, and `{MODEL_NAME}` were replaced in the installed local copy of `scripts/vision.py`.
 - If Python is missing, tell the user Python is required.
 - If the `openai` package is missing, install it with the available interpreter, for example `python3 -m pip install openai` or `python -m pip install openai`.
 - If the image file is missing, ask the user for a valid local path or URL.
